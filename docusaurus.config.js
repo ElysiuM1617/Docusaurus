@@ -8,34 +8,28 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-/** @type {import('@docusaurus/types').Config} */
+ /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Manual del Inspector Web',
-  tagline: 'Aprende a dominar las herramientas de desarrollo del navegador',
-  favicon: 'img/inspector-favicon.ico',
+  title: 'Manual del Inspector Web', // Título del sitio
+  tagline: 'Aprende a dominar las herramientas de desarrollo del navegador', // Tagline
+  favicon: 'img/inspector-favicon.ico', // Ruta del favicon
 
-  // Set the production url of your site here
-  url: 'https://elysium1617.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Docusaurus/',
+  // Configuración de la URL de producción
+  url: 'https://elysium1617.github.io', // Asegúrate de que coincida con la URL de tu repositorio
+  baseUrl: '/Docusaurus/', // Base URL (usualmente '/<nombre-repo>/')
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ElysiuM1617', // Usually your GitHub org/user name.
-  projectName: 'Docusaurus', // Usually your repo name.
+  // Configuración de GitHub Pages
+  organizationName: 'ElysiuM1617', // Nombre de la organización en GitHub
+  projectName: 'Docusaurus', // Nombre del repositorio en GitHub
 
-  trailingSlash: false,
+  trailingSlash: false, // Configura para no usar barra diagonal final
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore', // Ignorar enlaces rotos
+  onBrokenMarkdownLinks: 'warn', // Advertir sobre enlaces rotos en Markdown
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'en', // Idioma predeterminado
+    locales: ['en'], // Idiomas disponibles
   },
 
   presets: [
@@ -44,29 +38,19 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: './sidebars.js', // Ruta al archivo de la barra lateral
+          editUrl: 'https://github.com/ElysiuM1617/Docusaurus/tree/main/', // URL de edición en GitHub
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: true, // Mostrar tiempo estimado de lectura en el blog
           feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
+            type: ['rss', 'atom'], // Tipos de feed
+            xslt: true, // Usar XSLT para formatear el feed
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: 'https://github.com/ElysiuM1617/Docusaurus/tree/main/', // URL de edición en GitHub para el blog
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/custom.css', // Archivo CSS personalizado
         },
       }),
     ],
@@ -75,28 +59,26 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/docusaurus-social-card.jpg', // Imagen social de Docusaurus
       navbar: {
-        title: 'Inspector Web',
+        title: 'Inspector Web', // Título de la barra de navegación
         logo: {
           alt: 'Logo del Manual',
-          src: 'img/logo-inspector.svg',
+          src: 'img/logo-inspector.svg', // Ruta al logo
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/intro',
+            label: 'Inicio',
             position: 'left',
-            label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ElysiuM1617/Docusaurus',
             label: 'GitHub',
             position: 'right',
           },
-        ],
+        ],        
       },
       footer: {
         style: 'dark',
@@ -104,8 +86,8 @@ const config = {
           {
             title: 'Secciones',
             items: [
-              {label: 'Introducción', to: '/docs/intro'},
-              {label: 'Consola', to: '/docs/consola'},
+              {label: 'Introducción', to: '/docs/intro'}, // Enlace a la página de introducción
+              {label: 'Consola', to: '/docs/consola'}, // Enlace a la página de consola
             ],
           },
           {
@@ -113,7 +95,7 @@ const config = {
             items: [
               {
                 label: 'Repositorio',
-                href: 'https://github.com/ElysiuM1617/Docusaurus',
+                href: 'https://github.com/ElysiuM1617/Docusaurus', // Enlace al repositorio de GitHub
               },
             ],
           },

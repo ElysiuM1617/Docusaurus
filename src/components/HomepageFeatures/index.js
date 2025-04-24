@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Inspecciona Elementos',
+    Svg: require('@site/static/img/inspeccionar.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Aprende a seleccionar, explorar y analizar cualquier elemento del DOM desde el inspector del navegador.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Consola de JavaScript',
+    Svg: require('@site/static/img/consola.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Usa la consola para probar comandos, depurar errores y explorar objetos en tiempo real.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Red y Rendimiento',
+    Svg: require('@site/static/img/red.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Analiza solicitudes de red, tiempos de carga y optimiza el rendimiento de cualquier sitio web.
       </>
     ),
   },
