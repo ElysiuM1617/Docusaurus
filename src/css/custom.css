@@ -1,30 +1,65 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #2ec4b6;
+  --ifm-color-primary-dark: #25a99e;
+  --ifm-color-primary-light: #3ed2c4;
+  --ifm-background-color: #1e1e1e;
+  --ifm-navbar-background-color: #262626;
+  --ifm-footer-background-color: #1b1b1b;
+  --ifm-font-color-base: #e0e0e0;
+  --ifm-font-color-secondary: #aaaaaa;
+  --ifm-link-color: #2ec4b6;
+  --ifm-code-background: #2a2a2a;
+  --ifm-code-color: #f78c6c;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+html[data-theme='dark'] {
+  --ifm-background-color: #1e1e1e;
+  --ifm-navbar-background-color: #262626;
+  --ifm-footer-background-color: #1b1b1b;
+}
+
+body {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu__link--active,
+.menu__link:hover {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.footer {
+  font-size: 0.9rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.footer a {
+  color: var(--ifm-color-primary);
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+code {
+  background-color: var(--ifm-code-background);
+  color: var(--ifm-code-color);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
 }
