@@ -61,25 +61,21 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg', // Imagen social de Docusaurus
       navbar: {
-        title: 'Inspector Web', // Título de la barra de navegación
+        title: 'Mi Sitio',
         logo: {
-          alt: 'Logo del Manual',
-          src: 'img/logo-inspector.svg', // Ruta al logo
+          alt: 'Logo de Mi Sitio',
+          src: 'img/logo.svg',
         },
         items: [
+          // {to: '/docs/intro', label: 'Tutorial', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            to: '/docs/intro',
-            label: 'Inicio',
-            position: 'left',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/ElysiuM1617/Docusaurus',
+            href: 'https://github.com/tu-usuario/tu-repo',
             label: 'GitHub',
             position: 'right',
           },
-        ],        
-      },
+        ],
+      },      
       footer: {
         style: 'dark',
         links: [
